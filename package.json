@@ -1,0 +1,42 @@
+{
+  "name": "parse-scraped-times",
+  "version": "1.0.0",
+  "description": "Attempts to parse dates from all sorts of insane HTML variations.",
+  "main": "dist/index.js",
+  "scripts": {
+    "dist": "./dist.sh",
+    "test": "npm run dist && ./node_modules/mocha/bin/mocha test",
+    "patch": "npm version patch && npm publish && git push --tags && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidcalhoun/parse-scraped-times.git"
+  },
+  "keywords": [
+    "time",
+    "date",
+    "html",
+    "parse",
+    "scraper",
+    "scraped",
+    "dirty",
+    "time"
+  ],
+  "author": "David Calhoun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidcalhoun/parse-scraped-times/issues"
+  },
+  "homepage": "https://github.com/davidcalhoun/parse-scraped-times#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "mocha": "^4.0.1"
+  }
+}
